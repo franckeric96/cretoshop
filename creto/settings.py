@@ -26,7 +26,7 @@ SECRET_KEY = 'q9_zue8*#0b7(95#^6ukm2s)r4@7cb%62$=qa#n2424tiyuo^u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cretos-shop.herokuapp.com']
+ALLOWED_HOSTS = ['cretos-shop.herokuapp.com', '*']
 
 
 # Application definition
@@ -147,9 +147,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+"""EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'angezanou00@gmail.com' # this is exactly the value 'apikey'
 EMAIL_HOST_PASSWORD = 'Angezanar3*'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = True"""
